@@ -1,1 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+header {
+  background-color: #b80000;
+  padding: 1rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+nav a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.hero {
+  background: url('img/container.jpg') center/cover;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: left;
+}
+.hero-content {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  border-radius: 5px;
+}
+.hero .brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.hero .belt {
+  font-weight: bold;
+}
+.hero .indo {
+  color: orange;
+  font-weight: bold;
+}
+.hero p {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+.section h3 {
+  margin-bottom: 1rem;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.feature {
+  width: 200px;
+  margin: 1rem;
+}
+.feature i {
+  font-size: 2rem;
+  color: #d70000;
+}
+.track-section {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.track-section img {
+  max-width: 400px;
+  width: 100%;
+}
+.track-content {
+  max-width: 500px;
+  text-align: left;
+}
+.track-content h4 {
+  color: #d70000;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #d70000;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+footer {
+  background: #b80000;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+footer .social a {
+  color: white;
+  margin-left: 1rem;
+}
 
