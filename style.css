@@ -3,12 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
   background-color: #fff;
   color: #333;
+  font-size: 0.9rem;
 }
+
+/* === Heading Scale === */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+p {
+  font-size: 0.9rem;
+}
+
+/* === Header === */
 header {
   background-color: #6D0D0D;
   padding: 1rem 2rem;
@@ -17,7 +42,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-/* === Logo dan Header Branding === */
+
+/* Logo dan branding */
 .logo-container {
   display: flex;
   align-items: center;
@@ -28,7 +54,6 @@ header {
   width: auto;
   max-height: 60px;
 }
-
 header h1 {
   font-size: 1rem;
 }
@@ -37,6 +62,8 @@ nav a {
   margin-left: 1rem;
   text-decoration: none;
 }
+
+/* === Hero Section === */
 .hero {
   background: url('img/container.jpg') center/cover;
   color: white;
@@ -54,6 +81,9 @@ nav a {
   align-items: baseline;
   gap: 0.5rem;
 }
+.hero .brand h2 {
+  font-size: 2rem;
+}
 .hero .belt {
   font-weight: bold;
 }
@@ -63,8 +93,11 @@ nav a {
 }
 .hero p {
   margin-top: 1rem;
+  font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* === Features Section === */
 .section {
   padding: 3rem 2rem;
   text-align: center;
@@ -86,6 +119,11 @@ nav a {
   font-size: 2rem;
   color: #6D0D0D;
 }
+.feature p {
+  font-size: 0.85rem;
+}
+
+/* === Tracking Section === */
 .track-section {
   background-color: #f9f9f9;
   padding: 2rem;
@@ -105,6 +143,11 @@ nav a {
 .track-content h4 {
   color: #6D0D0D;
 }
+.track-content p {
+  font-size: 0.85rem;
+}
+
+/* === Tombol === */
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -113,7 +156,13 @@ nav a {
   padding: 0.7rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s;
 }
+.btn:hover {
+  background: #500a0a;
+}
+
+/* === Footer === */
 footer {
   background: #6D0D0D;
   color: white;
@@ -121,7 +170,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 footer .social a {
   color: white;
