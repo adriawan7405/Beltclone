@@ -55,8 +55,31 @@
 
     try {
       // GANTI URL API INI dengan URL backend asli
-      const response = await fetch(`https://axioma-func.azurewebsites.net/api/Betlog_Tracking?tracking=${resi}`);
-      const data = await response.json();
+      // const response = await fetch(`https://axioma-func.azurewebsites.net/api/Betlog_Tracking?tracking=${resi}`);
+      // const data = await response.json();
+
+      // Simulasi hasil API (data dummy)
+const data = {
+  tracking: [
+    {
+      origin: "Jakarta",
+      destination: "Surabaya",
+      status: "In Transit",
+      remarks: "Paket sedang dalam perjalanan",
+      pic: "Budi",
+      date: "2024-06-24"
+    },
+    {
+      origin: "Surabaya",
+      destination: "Medan",
+      status: "Delivered",
+      remarks: "Telah diterima oleh penerima",
+      pic: "Sari",
+      date: "2024-06-25"
+    }
+  ]
+};
+
 
       if (data && data.tracking && data.tracking.length > 0) {
         let table = `
