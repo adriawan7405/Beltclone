@@ -1,132 +1,79 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Logistics Plus Brasil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: #333; background: #fff; line-height: 1.6;
-    }
-    header {
-      background: #6D0D0D;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 1.8rem;
-    }
-    nav a {
-      color: #fff;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 300;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?logistics,transport') center/cover;
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h3 {
-      color: #6D0D0D;
-      margin-bottom: 1rem;
-    }
-    .services, .contact {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .services div, .contact div {
-      background: #f5f5f5;
-      padding: 1rem;
-      border-radius: 10px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    .cta {
-      display: block;
-      width: max-content;
-      margin: 2rem auto 0;
-      background: #6D0D0D;
-      color: white;
-      padding: 0.75rem 2rem;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belt Logistics</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">belt logistics</a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>Logistics Plus Brasil</h1>
-  <nav>
-    <a href="#services">Serviços</a>
-    <a href="#about">Sobre</a>
-    <a href="#contact">Contato</a>
-  </nav>
-</header>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Solusi Logistik Terpercaya</h1>
+      <p>Memastikan pengiriman tepat waktu, aman, dan andal untuk bisnis Anda.</p>
+      <a href="#services" class="btn-primary">Lihat Layanan</a>
+    </div>
+  </section>
 
-<section class="hero">
-  <h2>Especialistas em Logística e Cadeia de Suprimentos</h2>
-  <p>Soluções completas para importação, exportação e distribuição.</p>
-</section>
+  <section class="services" id="services">
+    <div class="container">
+      <h2>Layanan Kami</h2>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Transportasi Darat</h3>
+          <p>Jangkauan luas dan tepat waktu ke seluruh Indonesia.</p>
+        </div>
+        <div class="service-item">
+          <h3>Pengiriman Laut & Udara</h3>
+          <p>Efisien dan aman, untuk kebutuhan ekspor impor.</p>
+        </div>
+        <div class="service-item">
+          <h3>Penyimpanan & Gudang</h3>
+          <p>Fasilitas modern dengan sistem keamanan 24/7.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="services" class="section services">
-  <h3>Nossos Serviços</h3>
-  <div>
-    <strong>Transporte Internacional</strong>
-    <p>Fretes aéreos e marítimos para todos os continentes.</p>
-  </div>
-  <div>
-    <strong>Armazenagem & Distribuição</strong>
-    <p>Depósitos modernos em São Paulo com controle inteligente de inventário.</p>
-  </div>
-  <div>
-    <strong>Despacho Aduaneiro</strong>
-    <p>Gerenciamento completo de importação e exportação, com conformidade total.</p>
-  </div>
-</section>
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p>Belt Logistics dengan pengalaman puluhan tahun di bidang logistik... (tambahkan profil singkat Anda).</p>
+    </div>
+  </section>
 
-<section id="about" class="section">
-  <h3>Sobre Nós</h3>
-  <p>A Logistics Plus Brasil faz parte de uma rede global presente em mais de 50 países. Nossa sede está em São Paulo, e apoiamos operações em toda América do Sul.</p>
-</section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Hubungi Kami</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Nama Anda" required/>
+        <input type="email" placeholder="Email" required/>
+        <textarea placeholder="Pesan Anda" required></textarea>
+        <button type="submit" class="btn-primary">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
 
-<section id="contact" class="section contact">
-  <h3>Entre em Contato</h3>
-  <div>
-    <p>Email: <a href="mailto:brazil@logisticsplus.com">brazil@logisticsplus.com</a></p>
-    <p>Telefone: +55 (11) 99999-9999</p>
-    <p>Endereço: Av. das Nações Unidas, São Paulo - SP</p>
-  </div>
-  <a class="cta" href="mailto:brazil@logisticsplus.com">Solicitar Cotação</a>
-</section>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Belt Logistics. All rights reserved.</p>
+    </div>
+  </footer>
 
-<footer>
-  <p>&copy; 2025 Logistics Plus Brasil. Todos os direitos reservados.</p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
