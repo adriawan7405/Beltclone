@@ -186,3 +186,19 @@ footer .social a {
 nav a i {
   font-size: 1.2rem;
 }
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  padding: 0 0.75rem;
+  text-decoration: none;
+}
+
+nav .home-link {
+  border-left: 1px solid white;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+}
