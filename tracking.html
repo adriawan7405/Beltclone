@@ -86,45 +86,29 @@ if (resi === "123456") {
   data = { tracking: [] }; // Tidak ditemukan
 }
 
-    {
-      origin: "Surabaya",
-      destination: "Medan",
-      status: "Delivered",
-      remarks: "Telah diterima oleh penerima",
-      pic: "Sari",
-      date: "2024-06-25"
-    }
-  ]
-};
-
 
       if (data && data.tracking && data.tracking.length > 0) {
-        let table = `
-          <table>
-            <tr>
-              <th>Origin</th>
-              <th>Destination</th>
-              <th>Status</th>
-              <th>Remarks</th>
-              <th>PIC</th>
-              <th>Date</th>
-            </tr>
-        `;
-        data.tracking.forEach(item => {
-          table += `
-            <tr>
-              <td>${item.origin}</td>
-              <td>${item.destination}</td>
-              <td>${item.status}</td>
-              <td>${item.remarks}</td>
-              <td>${item.pic}</td>
-              <td>${new Date(item.date).toLocaleDateString('id-ID')}</td>
-            </tr>
-          `;
-        });
-        table += "</table>";
-        resultBox.innerHTML = table;
-      } else {
+  let content = "";
+
+  data.tracking.forEach(item => {
+    content += `
+      <div class="tracking-result-item">
+        <pre>
+Origin      : ${item.origin}
+Destination : ${item.destination}
+Status      : ${item.status}
+Remarks     : ${item.remarks}
+PIC         : ${item.pic}
+Date        : ${new Date(item.date).toLocaleDateString('id-ID')}
+        </pre>
+        <hr />
+      </div>
+    `;
+  });
+
+  resultBox.innerHTML = content;
+}
+ else {
         resultBox.innerHTML = "<p>Data tidak ditemukan untuk nomor resi tersebut.</p>";
       }
     } catch (err) {
