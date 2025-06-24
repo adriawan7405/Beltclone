@@ -202,3 +202,16 @@ nav .home-link {
   margin-left: 0.75rem;
   padding-left: 0.75rem;
 }
+#trackingResult table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+#trackingResult th, #trackingResult td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+#trackingResult th {
+  background-color: #eee;
+}
