@@ -59,16 +59,33 @@
       // const data = await response.json();
 
       // Simulasi hasil API (data dummy)
-const data = {
-  tracking: [
-    {
-      origin: "Jakarta",
-      destination: "Surabaya",
-      status: "In Transit",
-      remarks: "Paket sedang dalam perjalanan",
-      pic: "Budi",
-      date: "2024-06-24"
-    },
+let data;
+
+if (resi === "123456") {
+  data = {
+    tracking: [
+      {
+        origin: "Jakarta",
+        destination: "Surabaya",
+        status: "In Transit",
+        remarks: "Paket sedang dalam perjalanan",
+        pic: "Budi",
+        date: "2024-06-24"
+      },
+      {
+        origin: "Surabaya",
+        destination: "Medan",
+        status: "Delivered",
+        remarks: "Telah diterima oleh penerima",
+        pic: "Sari",
+        date: "2024-06-25"
+      }
+    ]
+  };
+} else {
+  data = { tracking: [] }; // Tidak ditemukan
+}
+
     {
       origin: "Surabaya",
       destination: "Medan",
